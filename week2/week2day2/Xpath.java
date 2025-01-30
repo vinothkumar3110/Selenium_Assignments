@@ -38,7 +38,7 @@ public class Xpath {
 		WebElement login=driver.findElement(By.xpath("//input[@id='Login']"));
 		login.click();
 		
-		driver.close();
+		//driver.close();
 	}
 
 }
