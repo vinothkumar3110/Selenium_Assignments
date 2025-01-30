@@ -38,6 +38,8 @@ public class Xpath {
 		WebElement login=driver.findElement(By.xpath("//input[@id='Login']"));
 		login.click();
 		
+		System.out.println("Completed Successfully");
+		
 		//driver.close();
 	}
 

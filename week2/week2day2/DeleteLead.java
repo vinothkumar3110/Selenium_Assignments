@@ -1,11 +1,9 @@
 package Selenium_Assignments.week2.week2day2;
 
-import java.awt.RenderingHints.Key;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DeleteLead {
@@ -69,12 +67,12 @@ public class DeleteLead {
 //		WebElement leadid = driver.findElement(By.xpath("//div[@class='x-form-element']/input[@class=' x-form-text x-form-field ']"));
 //		Thread.sleep(2000);
 //		leadid.sendKeys(lead);
-		driver.findElement(By.xpath("//div[@class='x-form-element']/input[@class=' x-form-text x-form-field ']")).sendKeys(lead,Keys.ENTER);
+		driver.findElement(By.xpath("//div[@class='x-form-element']/input[@class=' x-form-text x-form-field ']")).sendKeys(lead);
 		Thread.sleep(2000);
 		
 		
 		System.out.println("Enter Find Leads");
-		//driver.findElement(By.xpath("//button[text()='Find Leads']")).click();
+		driver.findElement(By.xpath("//button[text()='Find Leads']")).click();
 		Thread.sleep(2000);
 		
 		String norec="No records to display";
@@ -82,7 +80,8 @@ public class DeleteLead {
 			System.out.println("Lead ID: "+lead+" Deleted Successfully");
 		} else {
 			System.out.println("Lead ID: "+lead+" NOT Deleted Properly");
-		};
+		}
+		System.out.println("Completed Successfully");
 		
 	}
 

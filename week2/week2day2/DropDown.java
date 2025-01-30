@@ -26,7 +26,9 @@ public class DropDown {
 		Select options3=new Select(dd3);
 		options3.selectByValue("Canada");// Select By Value
 		Thread.sleep(2000);
-		driver.close();
+		
+		System.out.println("Completed Successfully");
+		//driver.close();
 		
 		
 

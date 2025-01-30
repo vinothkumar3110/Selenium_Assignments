@@ -30,7 +30,7 @@ public class CreateAccountSelect {
 		driver.findElement(By.linkText("Create Account")).click();
 		
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//input[@id='accountName']")).sendKeys("test116");
+		driver.findElement(By.xpath("//input[@id='accountName']")).sendKeys("test117");
 		driver.findElement(By.name("description")).sendKeys("Selenium Automation Tester.");
 		
 		Thread.sleep(1000);
@@ -59,6 +59,8 @@ public class CreateAccountSelect {
 		options5.selectByValue("TX");
 		
 		driver.findElement(By.className("smallSubmit")).click();
+		
+		System.out.println("Completed Successfully");
 		
 		//driver.quit();
 		
